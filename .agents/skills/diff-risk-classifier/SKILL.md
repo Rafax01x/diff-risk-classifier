@@ -111,7 +111,7 @@ Special diff cases (apply before the trigger table):
 ### Risk table
 
 | file | trigger | level | required verification | notes |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | `path/to/file` | auth | HIGH | Run auth test suite; manual login + session-expiry check | Token expiry logic changed |
 
 ### Verification checklist
@@ -147,7 +147,7 @@ Input (short diff summary):
 Output:
 
 | file | trigger | level | required verification | notes |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | `src/auth/session.ts` | auth | HIGH | Run auth test suite; manual login + expiry check | Expiry logic changed |
 | `src/auth/session.test.ts` | deleted tests | HIGH | Restore test or written justification; re-run suite | Auth coverage removed |
 | `package.json` | dependency | MEDIUM | Review changelog; run affected tests | Minor bump, no breaking change |

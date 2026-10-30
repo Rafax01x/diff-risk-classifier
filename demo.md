@@ -22,7 +22,7 @@ Touching auth/secret/user data = HIGH minimum.
 ## Contoh 1: output skill
 
 | file | trigger | level | required verification | notes |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | `src/auth/session.ts` | auth | HIGH | Run auth test suite; manual login + session-expiry check | Token expiry logic changed |
 | `src/auth/session.test.ts` | deleted tests | HIGH | Restore test or written justification; re-run suite | Auth coverage removed |
 | `src/api/v2/export.ts` | public API | HIGH | Review request/response contract + versioning; confirm auth behavior; run API tests | New public endpoint |
