@@ -3,6 +3,8 @@
 Portable skill that classifies the merge risk of a diff — file by file —
 before it gets merged. Read-only: it analyzes diffs and never modifies code.
 
+![Sample report](demo-output.png)
+
 ## What it does
 
 Given a pull request diff or `git diff`, it outputs:
